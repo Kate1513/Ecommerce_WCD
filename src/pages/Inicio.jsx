@@ -1,10 +1,13 @@
 import React from 'react'
 import { Productos } from '../components/Productos'
+import { NavbarHeader } from '../components/NavbarH'
 function Inicio() {
   return (
     <>
-      <h1>Bienvenidos</h1>
-      <Productos />
+      <section className='max-w-fit justify-center'>
+        <NavbarHeader />
+        <Productos />
+      </section>
     </>
   )
 }
