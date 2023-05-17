@@ -12,7 +12,7 @@ function Productos() {
       <div className='flex justify-between'>
         <ul className='flex flex-wrap justify-center'>
           {productos.map((producto) => (
-            <li key={producto.id} className='m-4'>
+            <li key={producto.id} className='m-4 w-[300px] h-[320px]'>
               <div className='w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
                 <a href='#'>
                   <img className='p-8 rounded-t-lg max-h-48' src={producto.images[0]} alt='product image' />

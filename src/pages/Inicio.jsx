@@ -1,11 +1,13 @@
 import React from 'react'
 import { Productos } from '../components/Productos'
 import { NavbarHeader } from '../components/NavbarH'
+import Buscador from '../components/Buscador'
 function Inicio() {
   return (
     <>
-      <section className='max-w-fit justify-center'>
+      <section className='justify-center '>
         <NavbarHeader />
+        <Buscador />
         <Productos />
       </section>
     </>
