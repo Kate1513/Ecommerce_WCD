@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import Buscador from '../components/Buscador'
+
 function Productos() {
   const [productos, setProductos] = useState([])
   useEffect(() => {
@@ -10,6 +12,9 @@ function Productos() {
   return (
     <>
       <div>
+        <div>
+          <Buscador></Buscador>
+        </div>
         <ul>
           {productos.map((producto) => (
             <li key={producto.id}>
